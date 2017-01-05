@@ -1,8 +1,10 @@
 (function() {
-    'use strict'
+     function AlbumCtrl(Fixtures, SongPlayer) {
+        this.albumData = Fixtures.getAlbum();
+          this.songPlayer = SongPlayer;
+    }
 
-    angular.module('blocJams')
-            .controller('AlbumCtrl', function($scope) {
-                $scope.albumData = angular.copy(albumPicasso);
-            });
+    angular
+        .module('blocJams')
+        .controller('AlbumCtrl', ['Fixtures', 'SongPlayer', AlbumCtrl]);
 })();
