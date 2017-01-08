@@ -27,11 +27,20 @@
             currentSong = song;
         };
 
+        /**
+        *@function playSong
+        * @desc Private function that helps play song with less code
+        * @type Boolean?
+        */
+      function playSong() {
+        currentBuzzObject.play()
+        song.playing = true;
+      };
+
         SongPlayer.play = function(song) {
             if (currentSong !== song) {
                 setSong(song);
-                currentBuzzObject.play();
-                song.playing = true;
+                playSong();
             } else if (currentSong === song) {
                 if (currentBuzzObject.isPaused()) {
                     currentBuzzObject.play();
