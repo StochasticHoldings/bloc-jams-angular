@@ -32,12 +32,12 @@
         };
 
         Fixtures.getCollection = function(numberOfAlbums) {
-          return albumPicasso;
+          return [albumPicasso, albumMarconi];
         }
 
         Fixtures.getAlbum = function() {
-         return albumPicasso;
-     };
+             return albumPicasso;
+        };
         return Fixtures;
     }
 

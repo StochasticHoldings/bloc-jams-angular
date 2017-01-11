@@ -33,7 +33,7 @@
             /**
              *@function playSong
              * @desc Private function that helps play song with less code
-             * @type Boolean?
+             * @param {Object} song
              */
             function playSong(song) {
                 currentBuzzObject.play();

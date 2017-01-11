@@ -1,0 +1,4 @@
+Page - The initial index page that the whole web app is run off of.
+Template - A view that is inserted into the "Page" and is updated by app.js
+Controller - Business logic of the app, does something to the page
+Service - Service seems like more complicated javascript that makes functionallity. 
