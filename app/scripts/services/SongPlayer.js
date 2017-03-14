@@ -2,6 +2,22 @@
          function SongPlayer($rootScope, Fixtures) {
             var SongPlayer = {};
 
+            SongPlayer.currentVolume = 80;
+
+
+            SongPlayer.setVolume = function(value){
+              console.log("FLAG ONE")
+              window.foo = currentBuzzObject;
+              currentBuzzObject.setVolume(value);
+            }
+
+
+
+
+
+
+
+
             //var SongPlayer.currentAlbum = Fixtures.getAlbum();
             SongPlayer.currentAlbum = null
             /**
